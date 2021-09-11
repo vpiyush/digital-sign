@@ -11,5 +11,5 @@ type Service interface {
 	Status(ctx context.Context, ticketID string) (internal.Status, error)
 	Watermark(ctx context.Context, ticketID, mark string) (int, error)
 	AddDocument(ctx context.Context, doc *internal.Document) (string, error)
-	ServicStatus(ctx context.Context) (int, error)
+	ServiceStatus(ctx context.Context) (int, error)
 }
